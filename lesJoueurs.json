@@ -1,0 +1,34 @@
+[
+  {
+    "Num_partie": 1,
+    "Date_partie": "2018-10-18T18:05:41.1614527+02:00",
+    "LesEquipes": [
+      {
+        "Num_equipe": 1,
+        "Nom_equipe": "toto",
+        "Nb_joueur": 0,
+        "LesJoueurs": [
+          {
+            "Id": 1,
+            "Pseudo": "jamy",
+            "Nb_victoire": 0,
+            "Nb_defaite": 0
+          }
+        ]
+      },
+      {
+        "Num_equipe": 2,
+        "Nom_equipe": "tutu",
+        "Nb_joueur": 0,
+        "LesJoueurs": [
+          {
+            "Id": 2,
+            "Pseudo": "michel",
+            "Nb_victoire": 0,
+            "Nb_defaite": 0
+          }
+        ]
+      }
+    ]
+  }
+]

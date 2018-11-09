@@ -1,0 +1,30 @@
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\bin\Debug\Molkky-t.exe.config
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\bin\Debug\Molkky-t.exe
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\bin\Debug\Molkky-t.pdb
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\bin\Debug\Newtonsoft.Json.xml
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky-t.csprojAssemblyReference.cache
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky_t.Accueil.resources
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky_t.Actualites.resources
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky_t.Properties.Resources.resources
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky_t.Regle.resources
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky-t.csproj.GenerateResource.cache
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky-t.csproj.CoreCompileInputs.cache
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky-t.csproj.CopyComplete
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky-t.exe
+C:\Users\charlymessin\Documents\projet VS\Molkky-t\obj\Debug\Molkky-t.pdb
+\\Mac\Home\Documents\Molkky-t-test\bin\Debug\Molkky-t.exe.config
+\\Mac\Home\Documents\Molkky-t-test\bin\Debug\Molkky-t.exe
+\\Mac\Home\Documents\Molkky-t-test\bin\Debug\Molkky-t.pdb
+\\Mac\Home\Documents\Molkky-t-test\bin\Debug\Newtonsoft.Json.xml
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky-t.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky_t.Accueil.resources
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky_t.Actualites.resources
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky_t.Properties.Resources.resources
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky_t.Regle.resources
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky-t.csproj.GenerateResource.cache
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky-t.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky-t.csproj.CopyComplete
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky-t.exe
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky-t.pdb
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky_t.Joueurs.resources
+\\Mac\Home\Documents\Molkky-t-test\obj\Debug\Molkky_t.CreationJ.resources
