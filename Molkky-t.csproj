@@ -70,6 +70,18 @@
     <Compile Include="Actualites.Designer.cs">
       <DependentUpon>Actualites.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChoixJoueurSolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixJoueurSolo.Designer.cs">
+      <DependentUpon>ChoixJoueurSolo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoixMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixMode.Designer.cs">
+      <DependentUpon>ChoixMode.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreationJ.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,7 @@
       <DependentUpon>Joueurs.cs</DependentUpon>
     </Compile>
     <Compile Include="Lancer.cs" />
+    <Compile Include="Molkky.cs" />
     <Compile Include="Partie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Actualites.resx">
       <DependentUpon>Actualites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixJoueurSolo.resx">
+      <DependentUpon>ChoixJoueurSolo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixMode.resx">
+      <DependentUpon>ChoixMode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreationJ.resx">
       <DependentUpon>CreationJ.cs</DependentUpon>

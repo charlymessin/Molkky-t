@@ -20,6 +20,7 @@ namespace Molkky_t
             InitializeComponent();
         }
 
+        
         //Boutton joueurs
         private void metroButton2_Click(object sender, EventArgs e)
         {
@@ -44,5 +45,12 @@ namespace Molkky_t
             regle.ShowDialog();
         }
 
+        //Boutton jouer
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            ChoixMode choixmode = new ChoixMode();
+
+            choixmode.ShowDialog();
+        }
     }
 }

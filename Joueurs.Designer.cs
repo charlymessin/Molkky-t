@@ -32,7 +32,6 @@
             this.listeJoueur2 = new MetroFramework.Controls.MetroListView();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.Creat_j = new MetroFramework.Controls.MetroButton();
-            this.btn_supprJ = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // listeJoueur
@@ -76,22 +75,11 @@
             this.Creat_j.UseSelectable = true;
             this.Creat_j.Click += new System.EventHandler(this.Creat_j_Click);
             // 
-            // btn_supprJ
-            // 
-            this.btn_supprJ.Location = new System.Drawing.Point(280, 124);
-            this.btn_supprJ.Name = "btn_supprJ";
-            this.btn_supprJ.Size = new System.Drawing.Size(126, 23);
-            this.btn_supprJ.TabIndex = 8;
-            this.btn_supprJ.Text = "Supprimer joueur";
-            this.btn_supprJ.UseSelectable = true;
-            this.btn_supprJ.Click += new System.EventHandler(this.btn_supprJ_Click);
-            // 
             // Joueurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 492);
-            this.Controls.Add(this.btn_supprJ);
             this.Controls.Add(this.Creat_j);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.listeJoueur2);
@@ -108,6 +96,5 @@
         private MetroFramework.Controls.MetroListView listeJoueur2;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton Creat_j;
-        private MetroFramework.Controls.MetroButton btn_supprJ;
     }
 }
