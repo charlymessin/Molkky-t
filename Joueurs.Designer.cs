@@ -32,6 +32,7 @@
             this.listeJoueur2 = new MetroFramework.Controls.MetroListView();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.Creat_j = new MetroFramework.Controls.MetroButton();
+            this.btnCreerPartie = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // listeJoueur
@@ -75,11 +76,22 @@
             this.Creat_j.UseSelectable = true;
             this.Creat_j.Click += new System.EventHandler(this.Creat_j_Click);
             // 
+            // btnCreerPartie
+            // 
+            this.btnCreerPartie.Location = new System.Drawing.Point(307, 374);
+            this.btnCreerPartie.Name = "btnCreerPartie";
+            this.btnCreerPartie.Size = new System.Drawing.Size(125, 41);
+            this.btnCreerPartie.TabIndex = 8;
+            this.btnCreerPartie.Text = "Créer une partie";
+            this.btnCreerPartie.UseSelectable = true;
+            this.btnCreerPartie.Click += new System.EventHandler(this.btnCreerPartie_Click);
+            // 
             // Joueurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 492);
+            this.Controls.Add(this.btnCreerPartie);
             this.Controls.Add(this.Creat_j);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.listeJoueur2);
@@ -96,5 +108,6 @@
         private MetroFramework.Controls.MetroListView listeJoueur2;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton Creat_j;
+        private MetroFramework.Controls.MetroButton btnCreerPartie;
     }
 }

@@ -43,5 +43,12 @@ namespace Molkky_t
         {
             //listeJoueur.Select;
         }
+
+        private void btnCreerPartie_Click(object sender, EventArgs e)
+        {
+            ChoixMode choixmode = new ChoixMode();
+            this.Close();
+            choixmode.ShowDialog();
+        }
     }
 }

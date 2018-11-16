@@ -28,6 +28,7 @@ namespace Molkky_t
             }
             listJoueurSolo.DataSource = lesJoueurs;
             lesJoueursAjouter = new List<Joueur>();
+            
         }
 
         private void btnAjouterJSolo_Click(object sender, EventArgs e)
@@ -46,7 +47,10 @@ namespace Molkky_t
         private void btnRetirJsolo_Click(object sender, EventArgs e)
         {
             Joueur joueurR = (Joueur)listAjoutJoueur.SelectedItem;
-            listAjoutJoueur.Items.Remove(joueurR);
+            lesJoueursAjouter.Remove(joueurR);
+            listAjoutJoueur.DataSource = null;
+            listAjoutJoueur.DataSource = lesJoueursAjouter;
+            //listAjoutJoueur.Items.Remove(joueurR);
             lesJoueurs.Add(joueurR);
             listJoueurSolo.DataSource = null;
             listJoueurSolo.DataSource = lesJoueurs;
@@ -56,7 +60,7 @@ namespace Molkky_t
         {
             Partie p = new Partie();
             p.LesJoueurs =(List<Joueur>) listAjoutJoueur.DataSource;
-            //MessageBox.Show(p.LesJoueurs.Count.ToString());
+            MessageBox.Show(p.LesJoueurs.Count.ToString());
         }
     }
 }
