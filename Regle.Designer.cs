@@ -36,23 +36,21 @@
             // 
             // panelRegles
             // 
-            this.panelRegles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelRegles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panelRegles.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelRegles.BackgroundImage")));
             this.panelRegles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelRegles.Controls.Add(this.labelRegles);
             this.panelRegles.HorizontalScrollbarBarColor = true;
             this.panelRegles.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelRegles.HorizontalScrollbarSize = 10;
-            this.panelRegles.Location = new System.Drawing.Point(16, 85);
+            this.panelRegles.HorizontalScrollbarSize = 12;
+            this.panelRegles.Location = new System.Drawing.Point(26, 155);
+            this.panelRegles.Margin = new System.Windows.Forms.Padding(4);
             this.panelRegles.Name = "panelRegles";
-            this.panelRegles.Size = new System.Drawing.Size(766, 365);
+            this.panelRegles.Size = new System.Drawing.Size(950, 400);
             this.panelRegles.TabIndex = 2;
             this.panelRegles.VerticalScrollbarBarColor = true;
             this.panelRegles.VerticalScrollbarHighlightOnWheel = false;
-            this.panelRegles.VerticalScrollbarSize = 9;
+            this.panelRegles.VerticalScrollbarSize = 12;
             // 
             // labelRegles
             // 
@@ -65,22 +63,22 @@
             this.labelRegles.BackColor = System.Drawing.SystemColors.Window;
             this.labelRegles.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("labelRegles.BackgroundImage")));
             this.labelRegles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.labelRegles.Location = new System.Drawing.Point(33, 36);
-            this.labelRegles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelRegles.Location = new System.Drawing.Point(44, 44);
+            this.labelRegles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelRegles.Name = "labelRegles";
-            this.labelRegles.Size = new System.Drawing.Size(695, 297);
+            this.labelRegles.Size = new System.Drawing.Size(856, 317);
             this.labelRegles.TabIndex = 2;
             // 
             // Regle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 492);
+            this.ClientSize = new System.Drawing.Size(1000, 615);
             this.Controls.Add(this.panelRegles);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MinimumSize = new System.Drawing.Size(800, 492);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1000, 615);
             this.Name = "Regle";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.panelRegles.ResumeLayout(false);
             this.ResumeLayout(false);
 

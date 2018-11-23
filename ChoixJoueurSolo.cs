@@ -21,7 +21,7 @@ namespace Molkky_t
         {
             InitializeComponent();
 
-            using (StreamReader file = File.OpenText(@"\\Mac\Home\Documents\Molkky-t-test\Resources\lesJoueurs.json"))
+            using (StreamReader file = File.OpenText(@"C:\Users\hugob\source\repos\molkky-t\Resources\lesJoueurs.json"))
             {
                 JsonSerializer newS = new JsonSerializer();
                 lesJoueurs = (List<Joueur>)newS.Deserialize(file, typeof(List<Joueur>));
@@ -54,9 +54,12 @@ namespace Molkky_t
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Partie p = new Partie();
-            p.LesJoueurs =(List<Joueur>) listAjoutJoueur.DataSource;
+            //Partie p = new Partie();
+            //p.LesJoueurs =(List<Joueur>) listAjoutJoueur.DataSource;
             //MessageBox.Show(p.LesJoueurs.Count.ToString());
+            JoueurSoloPartie jsp = new JoueurSoloPartie();
+            this.Close();
+            jsp.ShowDialog();
         }
     }
 }

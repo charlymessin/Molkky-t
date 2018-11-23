@@ -18,7 +18,7 @@ namespace Molkky_t
         public CreationJ()
         {
             InitializeComponent();
-            using (StreamReader file = File.OpenText(@"\\Mac\Home\Documents\Molkky-t-test\Resources\lesJoueurs.json"))
+            using (StreamReader file = File.OpenText(@"C:\Users\hugob\source\repos\molkky-t\Resources\lesJoueurs.json"))
             {
                 JsonSerializer newS = new JsonSerializer();
                 lesJoueurs = (List<Joueur>)newS.Deserialize(file, typeof(List<Joueur>));
@@ -35,7 +35,7 @@ namespace Molkky_t
             lesJoueurs.Add(j);
 
             string testJson = JsonConvert.SerializeObject(lesJoueurs, Formatting.Indented);
-            File.WriteAllText(@"\\Mac\Home\Documents\Molkky-t-test\Resources\lesJoueurs.json", testJson);
+            File.WriteAllText(@"C:\Users\hugob\source\repos\molkky-t\Resources\lesJoueurs.json", testJson);
 
             this.Close();
             Joueurs joueur = new Joueurs();

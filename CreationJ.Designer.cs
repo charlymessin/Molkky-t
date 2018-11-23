@@ -36,9 +36,10 @@
             // lblPseudo
             // 
             this.lblPseudo.AutoSize = true;
-            this.lblPseudo.Location = new System.Drawing.Point(286, 108);
+            this.lblPseudo.Location = new System.Drawing.Point(381, 133);
+            this.lblPseudo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPseudo.Name = "lblPseudo";
-            this.lblPseudo.Size = new System.Drawing.Size(59, 19);
+            this.lblPseudo.Size = new System.Drawing.Size(62, 20);
             this.lblPseudo.TabIndex = 0;
             this.lblPseudo.Text = "Pseudo :";
             // 
@@ -48,16 +49,18 @@
             // 
             // 
             this.txtPseudo.CustomButton.Image = null;
-            this.txtPseudo.CustomButton.Location = new System.Drawing.Point(97, 1);
+            this.txtPseudo.CustomButton.Location = new System.Drawing.Point(177, 2);
+            this.txtPseudo.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPseudo.CustomButton.Name = "";
-            this.txtPseudo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPseudo.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.txtPseudo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPseudo.CustomButton.TabIndex = 1;
             this.txtPseudo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPseudo.CustomButton.UseSelectable = true;
             this.txtPseudo.CustomButton.Visible = false;
             this.txtPseudo.Lines = new string[0];
-            this.txtPseudo.Location = new System.Drawing.Point(286, 174);
+            this.txtPseudo.Location = new System.Drawing.Point(381, 214);
+            this.txtPseudo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPseudo.MaxLength = 32767;
             this.txtPseudo.Name = "txtPseudo";
             this.txtPseudo.PasswordChar = '\0';
@@ -66,7 +69,7 @@
             this.txtPseudo.SelectionLength = 0;
             this.txtPseudo.SelectionStart = 0;
             this.txtPseudo.ShortcutsEnabled = true;
-            this.txtPseudo.Size = new System.Drawing.Size(119, 23);
+            this.txtPseudo.Size = new System.Drawing.Size(159, 28);
             this.txtPseudo.TabIndex = 1;
             this.txtPseudo.UseSelectable = true;
             this.txtPseudo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -74,9 +77,10 @@
             // 
             // btnCreateJ
             // 
-            this.btnCreateJ.Location = new System.Drawing.Point(286, 266);
+            this.btnCreateJ.Location = new System.Drawing.Point(381, 327);
+            this.btnCreateJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateJ.Name = "btnCreateJ";
-            this.btnCreateJ.Size = new System.Drawing.Size(75, 23);
+            this.btnCreateJ.Size = new System.Drawing.Size(100, 28);
             this.btnCreateJ.TabIndex = 2;
             this.btnCreateJ.Text = "Creer joueur";
             this.btnCreateJ.UseSelectable = true;
@@ -84,14 +88,15 @@
             // 
             // CreationJ
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 615);
             this.Controls.Add(this.btnCreateJ);
             this.Controls.Add(this.txtPseudo);
             this.Controls.Add(this.lblPseudo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CreationJ";
-            this.Text = "CreationJ";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.ResumeLayout(false);
             this.PerformLayout();
 

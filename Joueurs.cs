@@ -18,7 +18,7 @@ namespace Molkky_t
         public Joueurs()
         {
             InitializeComponent();
-            using (StreamReader file = File.OpenText(@"\\Mac\Home\Documents\Molkky-t-test\Resources\lesJoueurs.json"))
+            using (StreamReader file = File.OpenText(@"C:\Users\hugob\source\repos\molkky-t\Resources\lesJoueurs.json"))
             {
                 JsonSerializer newS = new JsonSerializer();
                 lesJoueurs = (List<Joueur>)newS.Deserialize(file, typeof(List<Joueur>));
@@ -39,9 +39,13 @@ namespace Molkky_t
             cj.ShowDialog();
         }
 
-        private void btn_supprJ_Click(object sender, EventArgs e)
+        private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            //listeJoueur.Select;
+            Joueur joueurR = (Joueur)listeJoueur.SelectedItem;
+            
+            lesJoueurs.Remove(joueurR);
+            listeJoueur.DataSource = null;
+            listeJoueur.DataSource = lesJoueurs;
         }
     }
 }

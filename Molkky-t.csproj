@@ -96,6 +96,12 @@
     <Compile Include="Joueurs.Designer.cs">
       <DependentUpon>Joueurs.cs</DependentUpon>
     </Compile>
+    <Compile Include="JoueurSoloPartie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JoueurSoloPartie.Designer.cs">
+      <DependentUpon>JoueurSoloPartie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lancer.cs" />
     <Compile Include="Molkky.cs" />
     <Compile Include="Partie.cs" />
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Joueurs.resx">
       <DependentUpon>Joueurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JoueurSoloPartie.resx">
+      <DependentUpon>JoueurSoloPartie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
