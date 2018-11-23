@@ -28,25 +28,33 @@ namespace Molkky_t
             }
             listJoueurSolo.DataSource = lesJoueurs;
             lesJoueursAjouter = new List<Joueur>();
+            
         }
 
         private void btnAjouterJSolo_Click(object sender, EventArgs e)
         {
-            Joueur joueur = (Joueur)listJoueurSolo.SelectedItem;
-            lesJoueursAjouter.Add(joueur);
-            listAjoutJoueur.DataSource = null;
-            listAjoutJoueur.DataSource = lesJoueursAjouter;
-            lesJoueurs.Remove(joueur);
-            listJoueurSolo.DataSource = null;
-            listJoueurSolo.DataSource = lesJoueurs;
+            if (listJoueurSolo.Items.Count == 0 || listJoueurSolo.SelectedItem == null) { }
+            else
+            {
+                Joueur joueur = (Joueur)listJoueurSolo.SelectedItem;
+                lesJoueursAjouter.Add(joueur);
+                listAjoutJoueur.DataSource = null;
+                listAjoutJoueur.DataSource = lesJoueursAjouter;
+                lesJoueurs.Remove(joueur);
+                listJoueurSolo.DataSource = null;
+                listJoueurSolo.DataSource = lesJoueurs;
+            }
 
 
         }
 
         private void btnRetirJsolo_Click(object sender, EventArgs e)
-        {
+        {   
             Joueur joueurR = (Joueur)listAjoutJoueur.SelectedItem;
-            listAjoutJoueur.Items.Remove(joueurR);
+            lesJoueursAjouter.Remove(joueurR);
+            listAjoutJoueur.DataSource = null;
+            listAjoutJoueur.DataSource = lesJoueursAjouter;
+            //listAjoutJoueur.Items.Remove(joueurR);
             lesJoueurs.Add(joueurR);
             listJoueurSolo.DataSource = null;
             listJoueurSolo.DataSource = lesJoueurs;
@@ -54,6 +62,21 @@ namespace Molkky_t
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            Partie p = new Partie();
+            p.LesJoueurs = (List<Joueur>)listAjoutJoueur.DataSource;
+            if (p.LesJoueurs == null || p.LesJoueurs.Count == 0)
+            {
+                MessageBox.Show("Il n'y a aucun joueur selectionné");
+            }
+            else if (p.LesJoueurs.Count == 1)
+            {
+                MessageBox.Show("Il y a qu'un seul joueur selectionné, veuillez en selectionner au moins deux");
+            }
+            else
+            {              
+                MessageBox.Show(p.LesJoueurs.Count.ToString());
+            }
+            
             //Partie p = new Partie();
             //p.LesJoueurs =(List<Joueur>) listAjoutJoueur.DataSource;
             //MessageBox.Show(p.LesJoueurs.Count.ToString());

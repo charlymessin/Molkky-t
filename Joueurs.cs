@@ -47,5 +47,12 @@ namespace Molkky_t
             listeJoueur.DataSource = null;
             listeJoueur.DataSource = lesJoueurs;
         }
+
+        private void btnCreerPartie_Click(object sender, EventArgs e)
+        {
+            ChoixMode choixmode = new ChoixMode();
+            this.Close();
+            choixmode.ShowDialog();
+        }
     }
 }

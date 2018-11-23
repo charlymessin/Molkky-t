@@ -32,6 +32,7 @@
             this.listeJoueur = new MetroFramework.Controls.MetroComboBox();
             this.listeJoueur2 = new MetroFramework.Controls.MetroListView();
             this.Creat_j = new MetroFramework.Controls.MetroButton();
+            this.btnCreerPartie = new MetroFramework.Controls.MetroButton();
             this.btnSupprimer = new MetroFramework.Controls.MetroButton();
             this.panelChoixMode = new MetroFramework.Controls.MetroPanel();
             this.panelChoixMode.SuspendLayout();
@@ -90,47 +91,15 @@
             this.Creat_j.UseStyleColors = true;
             this.Creat_j.Click += new System.EventHandler(this.Creat_j_Click);
             // 
-            // btnSupprimer
-            // 
-            this.btnSupprimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnSupprimer.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.btnSupprimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSupprimer.Location = new System.Drawing.Point(88, 310);
-            this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(123, 37);
-            this.btnSupprimer.TabIndex = 7;
-            this.btnSupprimer.Text = "Supprimer";
-            this.btnSupprimer.UseCustomBackColor = true;
-            this.btnSupprimer.UseCustomForeColor = true;
-            this.btnSupprimer.UseSelectable = true;
-            this.btnSupprimer.UseStyleColors = true;
-            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
-            // 
-            // panelChoixMode
-            // 
-            this.panelChoixMode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelChoixMode.BackgroundImage")));
-            this.panelChoixMode.Controls.Add(this.listeJoueur2);
-            this.panelChoixMode.Controls.Add(this.listeJoueur);
-            this.panelChoixMode.Controls.Add(this.btnSupprimer);
-            this.panelChoixMode.Controls.Add(this.Creat_j);
-            this.panelChoixMode.HorizontalScrollbarBarColor = true;
-            this.panelChoixMode.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelChoixMode.HorizontalScrollbarSize = 10;
-            this.panelChoixMode.Location = new System.Drawing.Point(30, 158);
-            this.panelChoixMode.Name = "panelChoixMode";
-            this.panelChoixMode.Size = new System.Drawing.Size(950, 400);
-            this.panelChoixMode.TabIndex = 8;
-            this.panelChoixMode.VerticalScrollbarBarColor = true;
-            this.panelChoixMode.VerticalScrollbarHighlightOnWheel = false;
-            this.panelChoixMode.VerticalScrollbarSize = 10;
-            // 
             // Joueurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 615);
-            this.Controls.Add(this.panelChoixMode);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientSize = new System.Drawing.Size(800, 492);
+            this.Controls.Add(this.Creat_j);
+            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.listeJoueur2);
+            this.Controls.Add(this.listeJoueur);
             this.Name = "Joueurs";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.panelChoixMode.ResumeLayout(false);
@@ -143,7 +112,5 @@
         private MetroFramework.Controls.MetroComboBox listeJoueur;
         private MetroFramework.Controls.MetroListView listeJoueur2;
         private MetroFramework.Controls.MetroButton Creat_j;
-        private MetroFramework.Controls.MetroButton btnSupprimer;
-        private MetroFramework.Controls.MetroPanel panelChoixMode;
     }
 }
