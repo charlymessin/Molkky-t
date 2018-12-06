@@ -18,5 +18,10 @@ namespace Molkky_t
         {
             InitializeComponent();
         }
+
+        private void labelTourJoueurResultat_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

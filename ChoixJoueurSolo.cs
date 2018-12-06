@@ -77,9 +77,6 @@ namespace Molkky_t
                 MessageBox.Show(p.LesJoueurs.Count.ToString());
             }
             
-            //Partie p = new Partie();
-            //p.LesJoueurs =(List<Joueur>) listAjoutJoueur.DataSource;
-            //MessageBox.Show(p.LesJoueurs.Count.ToString());
             JoueurSoloPartie jsp = new JoueurSoloPartie();
             this.Close();
             jsp.ShowDialog();
