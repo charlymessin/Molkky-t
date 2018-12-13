@@ -11,7 +11,6 @@ namespace Molkky_t
         private int num_partie;
         private DateTime date_partie;
         List<Joueur> lesJoueurs = new List<Joueur>();
-        List<Lancer> lesLancers = new List<Lancer>();
 
         public Partie()
         {
@@ -34,7 +33,6 @@ namespace Molkky_t
         public int Num_partie { get => num_partie; set => num_partie = value; }
         public DateTime Date_partie { get => date_partie; set => date_partie = value; }
         public List<Joueur> LesJoueurs { get => lesJoueurs; set => lesJoueurs = value; }
-        public List<Lancer> LesLancers { get => lesLancers; set => lesLancers = value; }
 
     }
 }

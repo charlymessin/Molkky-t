@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -53,8 +53,8 @@ namespace Molkky_t
                     nameCb = checkBox.Name.ToString();
                 }
             }
-            
-            char[] MyChar = { 'c', 'b' };
+
+            char[] MyChar = {'c', 'b'};
             
             if (nbChecke == 1)
             {
@@ -77,10 +77,10 @@ namespace Molkky_t
             if (scoreJoueurs[j - 1] == 50)
             {
                 MessageBox.Show(partie.LesJoueurs[i - 1].ToString() + " a gagné.");
+                this.FindForm().Close();
             }
             else if (scoreJoueurs[j - 1] > 50)
             {
-                MessageBox.Show("toto");
                 scoreJoueurs[j - 1] = 25;
             }
             for (int a = 0; a < partie.LesJoueurs.Count; a++)
@@ -101,9 +101,17 @@ namespace Molkky_t
                 labelTourJoueur.Text = partie.LesJoueurs[i].ToString();
                 i++;
             }
-            
+            foreach (MetroFramework.Controls.MetroCheckBox checkBox in metroPanel1.Controls.OfType<MetroFramework.Controls.MetroCheckBox>())
+            {
+                checkBox.CheckState = CheckState.Unchecked;
+            }
+
 
         }
-        
+
+        private void btnRetour_Click(object sender, EventArgs e)
+        {
+            this.FindForm().Close();
+        }
     }
 }
