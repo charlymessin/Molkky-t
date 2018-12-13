@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Molkky_t
 {
-    class Partie
+    public class Partie
     {
         private int num_partie;
         private DateTime date_partie;
@@ -33,9 +33,8 @@ namespace Molkky_t
 
         public int Num_partie { get => num_partie; set => num_partie = value; }
         public DateTime Date_partie { get => date_partie; set => date_partie = value; }
-        internal List<Joueur> LesJoueurs { get => lesJoueurs; set => lesJoueurs = value; }
-        internal List<Lancer> LesLancers { get => lesLancers; set => lesLancers = value; }
-
+        public List<Joueur> LesJoueurs { get => lesJoueurs; set => lesJoueurs = value; }
+        public List<Lancer> LesLancers { get => lesLancers; set => lesLancers = value; }
 
     }
 }

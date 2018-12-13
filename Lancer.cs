@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Molkky_t
 {
-    class Lancer
+    public class Lancer
     {
         private int num_lancer;
         private int nb_point;
@@ -21,5 +21,7 @@ namespace Molkky_t
 
         public int Num_lancer { get => num_lancer; set => num_lancer = value; }
         public int Nb_point { get => nb_point; set => nb_point = value; }
+
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Molkky_t
 {
-    class Joueur
+    public class Joueur
     {
         private string pseudo;
         //private object chemin_photo;
@@ -40,5 +40,12 @@ namespace Molkky_t
             return this.pseudo;
         }
 
+        public static int getNbrAleatoire(int nombreJoueur)
+        {
+            int nombre;
+            Random alea = new Random();
+            nombre = alea.Next(0, nombreJoueur-1);
+            return nombre;
+        }
     }
 }

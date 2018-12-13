@@ -112,7 +112,7 @@
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(169, 68);
             this.btnStart.TabIndex = 4;
-            this.btnStart.Text = "Commencer";
+            this.btnStart.Text = "Suivant";
             this.btnStart.UseCustomBackColor = true;
             this.btnStart.UseCustomForeColor = true;
             this.btnStart.UseSelectable = true;

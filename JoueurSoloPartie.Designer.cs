@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JoueurSoloPartie));
             this.panelChoixMode = new MetroFramework.Controls.MetroPanel();
+            this.lblClassement = new MetroFramework.Controls.MetroLabel();
+            this.labelTourJoueur = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.cb8 = new MetroFramework.Controls.MetroCheckBox();
             this.cb9 = new MetroFramework.Controls.MetroCheckBox();
@@ -43,10 +45,9 @@
             this.cb3 = new MetroFramework.Controls.MetroCheckBox();
             this.cb2 = new MetroFramework.Controls.MetroCheckBox();
             this.cb1 = new MetroFramework.Controls.MetroCheckBox();
-            this.btnFinTour = new MetroFramework.Controls.MetroButton();
+            this.btnJoueurSuivant = new MetroFramework.Controls.MetroButton();
             this.btnRetour = new MetroFramework.Controls.MetroButton();
-            this.labelTourJoueur = new MetroFramework.Controls.MetroLabel();
-            this.labelTourJoueurResultat = new MetroFramework.Controls.MetroLabel();
+            this.labelTitre = new MetroFramework.Controls.MetroLabel();
             this.panelChoixMode.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,11 +55,12 @@
             // panelChoixMode
             // 
             this.panelChoixMode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelChoixMode.BackgroundImage")));
-            this.panelChoixMode.Controls.Add(this.labelTourJoueurResultat);
-            this.panelChoixMode.Controls.Add(this.metroPanel1);
-            this.panelChoixMode.Controls.Add(this.btnFinTour);
-            this.panelChoixMode.Controls.Add(this.btnRetour);
+            this.panelChoixMode.Controls.Add(this.lblClassement);
             this.panelChoixMode.Controls.Add(this.labelTourJoueur);
+            this.panelChoixMode.Controls.Add(this.metroPanel1);
+            this.panelChoixMode.Controls.Add(this.btnJoueurSuivant);
+            this.panelChoixMode.Controls.Add(this.btnRetour);
+            this.panelChoixMode.Controls.Add(this.labelTitre);
             this.panelChoixMode.HorizontalScrollbarBarColor = true;
             this.panelChoixMode.HorizontalScrollbarHighlightOnWheel = false;
             this.panelChoixMode.HorizontalScrollbarSize = 10;
@@ -69,6 +71,29 @@
             this.panelChoixMode.VerticalScrollbarBarColor = true;
             this.panelChoixMode.VerticalScrollbarHighlightOnWheel = false;
             this.panelChoixMode.VerticalScrollbarSize = 10;
+            // 
+            // lblClassement
+            // 
+            this.lblClassement.AutoSize = true;
+            this.lblClassement.Location = new System.Drawing.Point(746, 27);
+            this.lblClassement.Name = "lblClassement";
+            this.lblClassement.Size = new System.Drawing.Size(0, 0);
+            this.lblClassement.TabIndex = 9;
+            // 
+            // labelTourJoueur
+            // 
+            this.labelTourJoueur.AutoSize = true;
+            this.labelTourJoueur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.labelTourJoueur.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.labelTourJoueur.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelTourJoueur.Location = new System.Drawing.Point(458, 27);
+            this.labelTourJoueur.Name = "labelTourJoueur";
+            this.labelTourJoueur.Size = new System.Drawing.Size(13, 20);
+            this.labelTourJoueur.TabIndex = 8;
+            this.labelTourJoueur.Text = " ";
+            this.labelTourJoueur.UseCustomBackColor = true;
+            this.labelTourJoueur.UseCustomForeColor = true;
+            this.labelTourJoueur.UseStyleColors = true;
             // 
             // metroPanel1
             // 
@@ -138,7 +163,7 @@
             this.cb7.BackColor = System.Drawing.Color.Transparent;
             this.cb7.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.cb7.ForeColor = System.Drawing.Color.Transparent;
-            this.cb7.Location = new System.Drawing.Point(136, 48);
+            this.cb7.Location = new System.Drawing.Point(137, 49);
             this.cb7.Name = "cb7";
             this.cb7.Size = new System.Drawing.Size(38, 25);
             this.cb7.TabIndex = 15;
@@ -292,29 +317,30 @@
             this.cb1.UseSelectable = true;
             this.cb1.UseStyleColors = true;
             // 
-            // btnFinTour
+            // btnJoueurSuivant
             // 
-            this.btnFinTour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnFinTour.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.btnFinTour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnFinTour.Location = new System.Drawing.Point(768, 344);
-            this.btnFinTour.Name = "btnFinTour";
-            this.btnFinTour.Size = new System.Drawing.Size(130, 43);
-            this.btnFinTour.TabIndex = 4;
-            this.btnFinTour.Text = "Fin de tour";
-            this.btnFinTour.UseCustomBackColor = true;
-            this.btnFinTour.UseCustomForeColor = true;
-            this.btnFinTour.UseSelectable = true;
-            this.btnFinTour.UseStyleColors = true;
+            this.btnJoueurSuivant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnJoueurSuivant.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnJoueurSuivant.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnJoueurSuivant.Location = new System.Drawing.Point(746, 330);
+            this.btnJoueurSuivant.Name = "btnJoueurSuivant";
+            this.btnJoueurSuivant.Size = new System.Drawing.Size(172, 55);
+            this.btnJoueurSuivant.TabIndex = 4;
+            this.btnJoueurSuivant.Text = "Joueur Suivant";
+            this.btnJoueurSuivant.UseCustomBackColor = true;
+            this.btnJoueurSuivant.UseCustomForeColor = true;
+            this.btnJoueurSuivant.UseSelectable = true;
+            this.btnJoueurSuivant.UseStyleColors = true;
+            this.btnJoueurSuivant.Click += new System.EventHandler(this.btnJoueurSuivant_Click);
             // 
             // btnRetour
             // 
             this.btnRetour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnRetour.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.btnRetour.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnRetour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRetour.Location = new System.Drawing.Point(46, 344);
+            this.btnRetour.Location = new System.Drawing.Point(26, 330);
             this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(130, 43);
+            this.btnRetour.Size = new System.Drawing.Size(186, 55);
             this.btnRetour.TabIndex = 3;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseCustomBackColor = true;
@@ -322,36 +348,20 @@
             this.btnRetour.UseSelectable = true;
             this.btnRetour.UseStyleColors = true;
             // 
-            // labelTourJoueur
+            // labelTitre
             // 
-            this.labelTourJoueur.AutoSize = true;
-            this.labelTourJoueur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.labelTourJoueur.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.labelTourJoueur.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelTourJoueur.Location = new System.Drawing.Point(331, 27);
-            this.labelTourJoueur.Name = "labelTourJoueur";
-            this.labelTourJoueur.Size = new System.Drawing.Size(127, 20);
-            this.labelTourJoueur.TabIndex = 2;
-            this.labelTourJoueur.Text = "Tour du Joueur : ";
-            this.labelTourJoueur.UseCustomBackColor = true;
-            this.labelTourJoueur.UseCustomForeColor = true;
-            this.labelTourJoueur.UseStyleColors = true;
-            // 
-            // labelTourJoueurResultat
-            // 
-            this.labelTourJoueurResultat.AutoSize = true;
-            this.labelTourJoueurResultat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.labelTourJoueurResultat.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.labelTourJoueurResultat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelTourJoueurResultat.Location = new System.Drawing.Point(458, 27);
-            this.labelTourJoueurResultat.Name = "labelTourJoueurResultat";
-            this.labelTourJoueurResultat.Size = new System.Drawing.Size(13, 20);
-            this.labelTourJoueurResultat.TabIndex = 8;
-            this.labelTourJoueurResultat.Text = " ";
-            this.labelTourJoueurResultat.UseCustomBackColor = true;
-            this.labelTourJoueurResultat.UseCustomForeColor = true;
-            this.labelTourJoueurResultat.UseStyleColors = true;
-            this.labelTourJoueurResultat.Click += new System.EventHandler(this.labelTourJoueurResultat_Click);
+            this.labelTitre.AutoSize = true;
+            this.labelTitre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.labelTitre.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelTitre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelTitre.Location = new System.Drawing.Point(314, 27);
+            this.labelTitre.Name = "labelTitre";
+            this.labelTitre.Size = new System.Drawing.Size(117, 20);
+            this.labelTitre.TabIndex = 2;
+            this.labelTitre.Text = "Tour du Joueur : ";
+            this.labelTitre.UseCustomBackColor = true;
+            this.labelTitre.UseCustomForeColor = true;
+            this.labelTitre.UseStyleColors = true;
             // 
             // JoueurSoloPartie
             // 
@@ -371,9 +381,9 @@
         #endregion
 
         private MetroFramework.Controls.MetroPanel panelChoixMode;
-        private MetroFramework.Controls.MetroButton btnFinTour;
+        private MetroFramework.Controls.MetroButton btnJoueurSuivant;
         private MetroFramework.Controls.MetroButton btnRetour;
-        private MetroFramework.Controls.MetroLabel labelTourJoueur;
+        private MetroFramework.Controls.MetroLabel labelTitre;
         private MetroFramework.Controls.MetroCheckBox cb1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroCheckBox cb2;
@@ -387,6 +397,7 @@
         private MetroFramework.Controls.MetroCheckBox cb4;
         private MetroFramework.Controls.MetroCheckBox cb10;
         private MetroFramework.Controls.MetroCheckBox cb3;
-        private MetroFramework.Controls.MetroLabel labelTourJoueurResultat;
+        private MetroFramework.Controls.MetroLabel labelTourJoueur;
+        private MetroFramework.Controls.MetroLabel lblClassement;
     }
 }
