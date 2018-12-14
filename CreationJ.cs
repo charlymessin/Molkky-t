@@ -31,17 +31,21 @@ namespace Molkky_t
         {
             string txtPseudoCreate = txtPseudo.Text;
 
-            Joueur j = new Joueur(txtPseudo.Text);
-            lesJoueurs.Add(j);
+            
+                Joueur j = new Joueur(txtPseudo.Text);
+                lesJoueurs.Add(j);
 
-            string testJson = JsonConvert.SerializeObject(lesJoueurs, Formatting.Indented);
-            File.WriteAllText(@"C:\Users\hugob\source\repos\molkky-t\Resources\lesJoueurs.json", testJson);
+                string testJson = JsonConvert.SerializeObject(lesJoueurs, Formatting.Indented);
+                File.WriteAllText(@"C:\Users\hugob\source\repos\molkky-t\Resources\lesJoueurs.json", testJson);
 
-            this.Close();
-            Joueurs joueur = new Joueurs();
-            joueur.ShowDialog();
+                this.Close();
+                Joueurs joueur = new Joueurs();
+                joueur.ShowDialog();
+            
+            
 
 
         }
+        
     }
 }

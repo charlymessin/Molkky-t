@@ -74,7 +74,7 @@ namespace Molkky_t
             }
             else
             {              
-                MessageBox.Show(p.LesJoueurs.Count.ToString()+ " joueurs sont rentrés dans la partie");
+                
             }
 
             JoueurSoloPartie jsp = new JoueurSoloPartie(p, Joueur.getNbrAleatoire(p.LesJoueurs.Count));

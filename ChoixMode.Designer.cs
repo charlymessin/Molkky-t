@@ -93,6 +93,7 @@
             this.ClientSize = new System.Drawing.Size(1000, 615);
             this.Controls.Add(this.panelChoixMode);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(1000, 615);
             this.Name = "ChoixMode";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.panelChoixMode.ResumeLayout(false);

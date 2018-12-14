@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JoueurSoloPartie));
             this.panelChoixMode = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.lblClassement = new MetroFramework.Controls.MetroLabel();
             this.labelTourJoueur = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
@@ -55,6 +56,7 @@
             // panelChoixMode
             // 
             this.panelChoixMode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelChoixMode.BackgroundImage")));
+            this.panelChoixMode.Controls.Add(this.metroLabel1);
             this.panelChoixMode.Controls.Add(this.lblClassement);
             this.panelChoixMode.Controls.Add(this.labelTourJoueur);
             this.panelChoixMode.Controls.Add(this.metroPanel1);
@@ -72,13 +74,35 @@
             this.panelChoixMode.VerticalScrollbarHighlightOnWheel = false;
             this.panelChoixMode.VerticalScrollbarSize = 10;
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.metroLabel1.Location = new System.Drawing.Point(746, 27);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(116, 20);
+            this.metroLabel1.TabIndex = 10;
+            this.metroLabel1.Text = "CLASSEMENT : ";
+            this.metroLabel1.UseCustomBackColor = true;
+            this.metroLabel1.UseCustomForeColor = true;
+            this.metroLabel1.UseStyleColors = true;
+            // 
             // lblClassement
             // 
             this.lblClassement.AutoSize = true;
-            this.lblClassement.Location = new System.Drawing.Point(746, 27);
+            this.lblClassement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lblClassement.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lblClassement.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lblClassement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblClassement.Location = new System.Drawing.Point(746, 66);
             this.lblClassement.Name = "lblClassement";
             this.lblClassement.Size = new System.Drawing.Size(0, 0);
             this.lblClassement.TabIndex = 9;
+            this.lblClassement.UseCustomBackColor = true;
+            this.lblClassement.UseCustomForeColor = true;
+            this.lblClassement.UseStyleColors = true;
             // 
             // labelTourJoueur
             // 
@@ -399,5 +423,6 @@
         private MetroFramework.Controls.MetroCheckBox cb3;
         private MetroFramework.Controls.MetroLabel labelTourJoueur;
         private MetroFramework.Controls.MetroLabel lblClassement;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }

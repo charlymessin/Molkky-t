@@ -41,6 +41,7 @@
             // listJoueurSolo
             // 
             this.listJoueurSolo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.listJoueurSolo.FontWeight = MetroFramework.MetroComboBoxWeight.Bold;
             this.listJoueurSolo.ForeColor = System.Drawing.Color.Gray;
             this.listJoueurSolo.FormattingEnabled = true;
             this.listJoueurSolo.ItemHeight = 24;
